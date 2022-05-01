@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col bg-dark text-white">
+            <a class="navbar-brand">SKLEP SPORTOWY</a>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="d-grid h-75 gap-2 col-3">
+            <button class="btn btn-outline-info"
+                routerLink="/admin/main/products"
+                routerLinkActive="active">
+                Produkty
+            </button>
+            <button class="btn btn-outline-info"
+                routerLink="/admin/main/orders"
+                routerLinkActive="active">
+                Zamówienia
+            </button>
+            <button class="btn btn-outline-danger" (click)="logout()">
+                Wyloguj
+            </button>
+        </div>
+        <div class="col-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
